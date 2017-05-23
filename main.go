@@ -28,7 +28,7 @@ func byteString(b []byte) (s string) {
 
 func generateQRCode(input string) (string) {
     var png []byte
-    png, err := qrcode.Encode(input, qrcode.Medium, 256)
+    png, err := qrcode.Encode(input, qrcode.Medium, 128)
     check(err)
     imgBase64Str := base64.StdEncoding.EncodeToString(png)
     return "<img src=\"data:image/png;base64," + imgBase64Str + "\" />"
