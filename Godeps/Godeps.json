@@ -1,0 +1,31 @@
+{
+	"ImportPath": "golang-generatebtc",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/skip2/go-qrcode",
+			"Rev": "0bb60b5a716144fa55da373bab578cca49a537d7"
+		},
+		{
+			"ImportPath": "github.com/skip2/go-qrcode/bitset",
+			"Rev": "0bb60b5a716144fa55da373bab578cca49a537d7"
+		},
+		{
+			"ImportPath": "github.com/skip2/go-qrcode/reedsolomon",
+			"Rev": "0bb60b5a716144fa55da373bab578cca49a537d7"
+		},
+		{
+			"ImportPath": "github.com/vsergeev/btckeygenie/btckey",
+			"Comment": "v1.0.0-5-gbcbf17f",
+			"Rev": "bcbf17fcb87bd43681bef0cdcc528f1d836a6b61"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ripemd160",
+			"Rev": "0fe963104e9d1877082f8fb38f816fcd97eb1d10"
+		}
+	]
+}

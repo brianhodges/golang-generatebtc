@@ -2,11 +2,12 @@ package main
 import (
 	"fmt"
     "log"
+    "os"
     "net/http"
     "encoding/base64"
     "crypto/rand"
-    "./btckey"
-    "./go-qrcode"
+    qrcode "github.com/skip2/go-qrcode"
+    btckey "github.com/vsergeev/btckeygenie/btckey"
 )
 
 const br = "<br>"
@@ -74,5 +75,5 @@ func main() {
         }
     })
 
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), nil))
 }
