@@ -35,7 +35,7 @@ func generateQRCode(input string) (string) {
 }
 
 func main() {
-	fmt.Println("Running local server @ http://localhost:8080")
+	fmt.Println("Running local server @ http://localhost:" + os.Getenv("PORT"))
     
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         url := r.FormValue("url")
