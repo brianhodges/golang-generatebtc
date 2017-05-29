@@ -2,7 +2,12 @@
 Just a project more for myself to refer back to when working on future Bitcoin projects. Generates BTC addresses and their corresponding QR Codes.
 
 # Setup
-*To Run:*
+***To Run:***
+
+*Set Environment Variable via Commands or in Bash File*
+
+export PORT="8080"
+
   ```
   git clone https://github.com/brianhodges/golang-generatebtc
   cd golang-generatebtc
